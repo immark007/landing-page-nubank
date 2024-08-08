@@ -30,9 +30,11 @@
         </div>
         <form class="formulario" action="#">
             <h2>Peça sua conta e cartão de crédito do Nubank</h2>
-            <input type="text" placeholder="Digite seu CPF">
+            <input type="text" maxlength="14" oninput="onCPFInput(event)" placeholder="Digite seu CPF">
             <button type="submit">Continuar</button>
         </form>
     </main>
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
