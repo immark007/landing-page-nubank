@@ -1,0 +1,110 @@
+@media (max-width: 999px) {
+    .hamburguer{
+        display: block;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+    .menu {
+        height: 70px;
+    }
+    
+    .navigation{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #FFFFFF;
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        pointer-events: none;
+    }
+
+    .nav.active .navigation{
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    }
+
+    .navigation .logout{
+        display: none;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 10px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .title {
+        width: 100%;
+        margin: 0;
+        text-align: center; 
+        margin-bottom: 30px;
+    }
+
+    .title h1{
+        font-size: 25px;
+    }
+
+    .title a{
+        display: none;
+    }
+
+    .mark img {
+        display: none;
+    }
+
+    .formulario{
+        margin: 0 20px;
+    }
+
+    .component{
+        flex-direction: column;
+        padding: 10px;
+        align-items: center;
+        text-align: left;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .component h3{
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .component h4{
+        font-size: 20px;
+    }
+
+    .component a{
+        display: none;
+    }
+
+    .component img{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .container{
+        height: 100vh;
+    }
+    .title h1{
+        font-size: 40px;
+    }
+    .mark{
+        display: none;
+    }
+}

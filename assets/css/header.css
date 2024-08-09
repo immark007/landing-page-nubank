@@ -1,0 +1,71 @@
+.menu{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 50px;
+    background-color: #FFFFFF;
+    position: fixed;
+}
+
+.logo{
+    margin: 0 30px;
+}
+
+.logo img{
+    width: 80px;
+    height: auto;
+}
+
+.navigation{
+    display: flex;
+    flex-grow: 1;
+}
+
+.navigation div{
+    display: flex;
+}
+
+.navigation li{
+    list-style: none;
+}
+.navigation a{
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    font-family: sans-serif;
+    transition: 0.3s;
+}
+
+.hamburguer{
+    display: none;
+    border: none;
+    background:none;
+    border-top: 3px solid #000;
+    cursor: pointer;
+}
+
+.hamburguer::before,
+.hamburguer::after{
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #000;
+    margin-top: 5px;
+}
+
+.navigation a:hover{
+    color: #8A05BE;
+    border-bottom: 2px solid #8A05BE ;
+    opacity: 0.7;
+}
+
+.navigation .logout{
+    margin-left: auto;
+    color: #8A05BE;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-right: 50px;
+}
+
