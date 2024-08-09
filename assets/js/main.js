@@ -1,3 +1,5 @@
+//Método para cpf
+
 function formatCPF(cpf) {
     cpf = cpf.replace(/\D/g, ''); 
     cpf = cpf.replace(/(\d{3})(\d)/, '$1.$2');
